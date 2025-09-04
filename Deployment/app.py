@@ -21,7 +21,7 @@ html_temp = '''
     <center><h3>Please upload Waste Image to find its Category</h3></center>
     </div>
     '''
-st.set_option('deprecation.showfileUploaderEncoding', False)
+#st.set_option('deprecation.showfileUploaderEncoding', False)
 st.markdown(html_temp, unsafe_allow_html=True)
 opt = st.selectbox("How do you want to upload the image for classification?\n", ('Please Select', 'Upload image via link', 'Upload image from device'))
 if opt == 'Upload image from device':
